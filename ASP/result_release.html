@@ -1,0 +1,145 @@
+<html>
+
+<div id="release">
+<h2> Release </h2>
+</div>
+<h3>Summary </h3>
+The lower percent the better performance.</p>
+<hr />
+<p><table  class="sticky-enabled table">
+<thead><tr><th> Group</th><th>  1.2.1 </th><th>  1.3.0 </th></tr></thead>
+<tbody>
+<tr class="odd"><td><span class="qtip-link qtip-link-odd">sparkbench</span></td><td>1.2%</td><td>2.6%</td></tr> 
+<tr class="odd"><td><span class="qtip-link qtip-link-odd">sparkperf</span></td><td>-2.4%</td><td>-3.8%</td></tr> 
+</tbody>
+</table>
+<img border="0" src="image/plaf1.release/overall.png" width="500" height="200"> 
+
+<h3> Detail </h3>
+<hr />
+<h4>sparkbench</h4>
+<hr />
+<p>
+
+<table id="tWorkLoadData" class="sticky-enabled table">
+	<thead>
+		<tr>
+			<th>JOB</th>
+						<th> 1.2.1 </th>
+						<th> 1.3.0 </th>
+					</tr>
+	</thead>
+	<tbody>
+						<tr class="odd">
+			<td> sleep </td>
+						<td>7.8%</td>
+					<td>5.2%</td>
+				</tr>
+				<tr class="odd">
+			<td> wordcount </td>
+						<td>-3.7%</td>
+					<td>2.9%</td>
+				</tr>
+				<tr class="odd">
+			<td> kmeans </td>
+						<td>-1.2%</td>
+					<td>-1.0%</td>
+				</tr>
+				<tr class="odd">
+			<td> scan </td>
+						<td>10.4%</td>
+					<td>13.0%</td>
+				</tr>
+				<tr class="odd">
+			<td> bayes </td>
+						<td>5.0%</td>
+					<td>1.2%</td>
+				</tr>
+				<tr class="odd">
+			<td> aggregation </td>
+						<td>-0.8%</td>
+					<td>6.6%</td>
+				</tr>
+				<tr class="odd">
+			<td> join </td>
+						<td>7.4%</td>
+					<td>1.5%</td>
+				</tr>
+				<tr class="odd">
+			<td> sort </td>
+						<td>-10.8%</td>
+					<td>-2.4%</td>
+				</tr>
+				<tr class="odd">
+			<td> pagerank </td>
+						<td>3.1%</td>
+					<td>2.2%</td>
+				</tr>
+				<tr class="odd">
+			<td> terasort </td>
+						<td>-5.1%</td>
+					<td>-3.0%</td>
+				</tr>
+			</tbody>
+</table>
+Comments: null means no such workload running or workload failed in this time.</p>
+<img border="0" src="image/plaf1.release/sparkbench_workloads.png" width="500" height="200">  
+<h4>sparkperf</h4>
+<hr />
+<p>
+
+<table id="tWorkLoadData" class="sticky-enabled table">
+	<thead>
+		<tr>
+			<th>JOB</th>
+						<th> 1.2.1 </th>
+						<th> 1.3.0 </th>
+					</tr>
+	</thead>
+	<tbody>
+						<tr class="odd">
+			<td> agg </td>
+						<td>-0.5%</td>
+					<td>-5.2%</td>
+				</tr>
+				<tr class="odd">
+			<td> agg-int </td>
+						<td>11.0%</td>
+					<td>10.7%</td>
+				</tr>
+				<tr class="odd">
+			<td> agg-naive </td>
+						<td>-14.9%</td>
+					<td>-10.8%</td>
+				</tr>
+				<tr class="odd">
+			<td> count </td>
+						<td>-8.6%</td>
+					<td>-3.7%</td>
+				</tr>
+				<tr class="odd">
+			<td> count-filter </td>
+						<td>-11.0%</td>
+					<td>-9.6%</td>
+				</tr>
+				<tr class="odd">
+			<td> scheduling </td>
+						<td>6.9%</td>
+					<td>-7.1%</td>
+				</tr>
+				<tr class="odd">
+			<td> sort </td>
+						<td>-5.6%</td>
+					<td>-5.1%</td>
+				</tr>
+				<tr class="odd">
+			<td> sort-int </td>
+						<td>3.4%</td>
+					<td>0.8%</td>
+				</tr>
+			</tbody>
+</table>
+Comments: null means no such workload running or workload failed in this time.</p>
+<img border="0" src="image/plaf1.release/sparkperf_workloads.png" width="500" height="200">  
+
+

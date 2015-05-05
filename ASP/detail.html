@@ -1,0 +1,268 @@
+<html>
+<h1>Apache Spark Performance</h1>
+<h2> Description</h2>
+<hr />
+Each data point represents each workload runtime percent compared with the previous week. Different lines represents different workloads running on spark yarn-client mode.</p>
+<h3>Hardware</h3>
+<hr />
+CPU type: Intel(R) Xeon(R) CPU E5-2697 v2 @ 2.70GHz <br />
+Memory: 192GBMb<br />
+Disk Type: HDD<br />
+Number of HDD disk: 8<br />
+Disk size: 1TB<br />
+Disk controller: SATA</p>
+<h3>Software</h3>
+<hr />
+JAVA version: 1.8.0_25<br />
+Hadoop version: 2.2.0<br />
+HiBench version: 3.0<br />
+Spark on yarn-client mode</p>
+<h3>Cluster</h3>
+<hr />
+1 node for Master<br/>
+10 nodes for Slave<br/>
+<h3> Detail </h3>
+<hr />
+<h4>sparkbench</h4>
+<hr />
+<p>
+<table id="tWorkLoadData" class="sticky-enabled table">
+	<thead>
+		<tr>
+			<th>JOB</th>
+						<th> 20150427 </th>
+						<th> 20150428 </th>
+						<th> 20150429 </th>
+						<th> 20150430 </th>
+						<th> 20150501 </th>
+						<th> 20150502 </th>
+						<th> 20150503 </th>
+						<th> 20150504 </th>
+					</tr>
+	</thead>
+	<tbody>
+						<tr class="odd">
+			<td> sleep </td>
+						<td>-0.3%</td>
+					<td>0.3%</td>
+					<td>-0.3%</td>
+					<td>720.3%</td>
+					<td>41.6%</td>
+					<td>41.7%</td>
+					<td>41.9%</td>
+					<td>41.1%</td>
+				</tr>
+				<tr class="odd">
+			<td> wordcount </td>
+						<td>0.2%</td>
+					<td>254.1%</td>
+					<td>243.4%</td>
+					<td>1597.0%</td>
+					<td>1069.2%</td>
+					<td>1085.1%</td>
+					<td>1258.0%</td>
+					<td>1164.3%</td>
+				</tr>
+				<tr class="odd">
+			<td> kmeans </td>
+						<td>0.2%</td>
+					<td>320.2%</td>
+					<td>1127.6%</td>
+					<td>1690.9%</td>
+					<td>1756.4%</td>
+					<td>1428.5%</td>
+					<td>1692.0%</td>
+					<td>1342.9%</td>
+				</tr>
+				<tr class="odd">
+			<td> scan </td>
+						<td>0.1%</td>
+					<td>63.3%</td>
+					<td>411.4%</td>
+					<td>989.6%</td>
+					<td>961.0%</td>
+					<td>971.8%</td>
+					<td>994.2%</td>
+					<td>888.0%</td>
+				</tr>
+				<tr class="odd">
+			<td> bayes </td>
+						<td>-0.1%</td>
+					<td>327.6%</td>
+					<td>301.0%</td>
+					<td>973.5%</td>
+					<td>978.3%</td>
+					<td>1065.1%</td>
+					<td>987.7%</td>
+					<td>935.1%</td>
+				</tr>
+				<tr class="odd">
+			<td> aggregation </td>
+						<td>1.2%</td>
+					<td>0.5%</td>
+					<td>1.8%</td>
+					<td>265.1%</td>
+					<td>262.5%</td>
+					<td>271.7%</td>
+					<td>263.3%</td>
+					<td>265.9%</td>
+				</tr>
+				<tr class="odd">
+			<td> join </td>
+						<td>-0.6%</td>
+					<td>8.2%</td>
+					<td>4.8%</td>
+					<td>708.5%</td>
+					<td>705.1%</td>
+					<td>714.0%</td>
+					<td>712.2%</td>
+					<td>681.8%</td>
+				</tr>
+				<tr class="odd">
+			<td> sort </td>
+						<td>-0.3%</td>
+					<td>232.5%</td>
+					<td>251.7%</td>
+					<td>877.7%</td>
+					<td>912.6%</td>
+					<td>895.6%</td>
+					<td>941.8%</td>
+					<td>929.7%</td>
+				</tr>
+				<tr class="odd">
+			<td> pagerank </td>
+						<td>0.0%</td>
+					<td>398.7%</td>
+					<td>438.9%</td>
+					<td>767.3%</td>
+					<td>784.7%</td>
+					<td>771.3%</td>
+					<td>754.3%</td>
+					<td>790.8%</td>
+				</tr>
+				<tr class="odd">
+			<td> terasort </td>
+						<td>-86.2%</td>
+					<td>-79.7%</td>
+					<td>-83.8%</td>
+					<td>-73.9%</td>
+					<td>-71.8%</td>
+					<td>-71.7%</td>
+					<td>-71.1%</td>
+					<td>-71.9%</td>
+				</tr>
+			</tbody>
+</table>
+Comments: null means no such workload running in this week.</p>
+<img border="0" src="image/plaf1.time/sparkbench_workloads.png" width="500" height="200">  
+<h4>sparkperf</h4>
+<hr />
+<p>
+<table id="tWorkLoadData" class="sticky-enabled table">
+	<thead>
+		<tr>
+			<th>JOB</th>
+						<th> 20150427 </th>
+						<th> 20150428 </th>
+						<th> 20150429 </th>
+						<th> 20150430 </th>
+						<th> 20150501 </th>
+						<th> 20150502 </th>
+						<th> 20150503 </th>
+						<th> 20150504 </th>
+					</tr>
+	</thead>
+	<tbody>
+						<tr class="odd">
+			<td> agg </td>
+						<td>2.0%</td>
+					<td>1.4%</td>
+					<td>-49.8%</td>
+					<td>-50.3%</td>
+					<td>-51.0%</td>
+					<td>-50.8%</td>
+					<td>-51.3%</td>
+					<td>-51.1%</td>
+				</tr>
+				<tr class="odd">
+			<td> agg-int </td>
+						<td>-15.0%</td>
+					<td>-11.1%</td>
+					<td>-66.5%</td>
+					<td>-59.1%</td>
+					<td>-60.4%</td>
+					<td>-61.4%</td>
+					<td>-62.8%</td>
+					<td>-56.0%</td>
+				</tr>
+				<tr class="odd">
+			<td> agg-naive </td>
+						<td>-0.5%</td>
+					<td>-0.3%</td>
+					<td>-49.9%</td>
+					<td>-52.0%</td>
+					<td>-51.1%</td>
+					<td>-52.9%</td>
+					<td>-52.3%</td>
+					<td>-52.4%</td>
+				</tr>
+				<tr class="odd">
+			<td> scheduling </td>
+						<td>10.5%</td>
+					<td>1.0%</td>
+					<td>-11.3%</td>
+					<td>-7.7%</td>
+					<td>-12.2%</td>
+					<td>-3.1%</td>
+					<td>-9.7%</td>
+					<td>0.1%</td>
+				</tr>
+				<tr class="odd">
+			<td> count-filter </td>
+						<td>0.5%</td>
+					<td>2.0%</td>
+					<td>-57.2%</td>
+					<td>-62.2%</td>
+					<td>-61.8%</td>
+					<td>-62.1%</td>
+					<td>-61.9%</td>
+					<td>-61.9%</td>
+				</tr>
+				<tr class="odd">
+			<td> count </td>
+						<td>1.3%</td>
+					<td>1.9%</td>
+					<td>-57.0%</td>
+					<td>-60.9%</td>
+					<td>-60.7%</td>
+					<td>-60.9%</td>
+					<td>-60.8%</td>
+					<td>-60.9%</td>
+				</tr>
+				<tr class="odd">
+			<td> sort </td>
+						<td>0.0%</td>
+					<td>1.2%</td>
+					<td>-43.7%</td>
+					<td>-43.6%</td>
+					<td>-42.9%</td>
+					<td>-46.0%</td>
+					<td>-44.5%</td>
+					<td>-45.5%</td>
+				</tr>
+				<tr class="odd">
+			<td> sort-int </td>
+						<td>-0.8%</td>
+					<td>12.8%</td>
+					<td>-44.6%</td>
+					<td>-46.7%</td>
+					<td>-47.3%</td>
+					<td>-52.4%</td>
+					<td>29.2%</td>
+					<td>20.3%</td>
+				</tr>
+			</tbody>
+</table>
+Comments: null means no such workload running in this week.</p>
+<img border="0" src="image/plaf1.time/sparkperf_workloads.png" width="500" height="200">  
+

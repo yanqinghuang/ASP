@@ -1,0 +1,87 @@
+
+#framework{
+	text-align:center;
+}
+
+
+#divLogo{
+	width: 1024px;
+	height: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid 1px #ccc;
+}
+
+#divNav{
+	width: 100%;
+	height: 30px;
+	border: solid 1px #ccc;
+}
+
+#divNavBar
+{
+	width: 1024px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.nav>li>a
+{
+	font-size: 15px;
+	font-family: 'ClearSans-Medium', 'Arial';
+	color: white;
+	font-weight:bold;
+	float:left;
+}
+
+.menu-left{
+	
+}
+
+
+
+#divContainer
+{
+
+	text-align:left;
+	width: 1024px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#divContainer-left
+{
+	width: 300px;
+	height: auto;
+	float:left;
+
+}
+
+
+
+#divContainer-right
+{
+	width: 700px;
+	height: auto;
+	float:left;
+	margin-left: 10px;
+}
+
+
+#divFooter
+{
+	width: 1024px;
+	height: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid 1px #ccc;
+	clear:  both;
+}
+
+.area{
+	width: 400px;
+	height: 600px;
+	margin: 10px;
+}
